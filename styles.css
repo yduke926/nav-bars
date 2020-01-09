@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+nav {
+    min-height: 10vh;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 40rem;
+}
+
+.logo {
+    padding-left: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-content: center;
+    padding-right: 5rem;
+}
+
+.nav-links li{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.nav-links li:hover{
+    color: rgb(6, 176, 233);
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .logo,
+    .nav-links {
+        padding: 0 3rem;
+        margin: 2rem 0;
+    }
+
+    .nav-links li{
+        padding: 0 2rem;
+    }
+
+}
