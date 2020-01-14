@@ -17,23 +17,24 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex: 1 1 40rem;
 }
 
 .logo {
     padding-left: 5rem;
+    margin-right: auto;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     align-content: center;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
 }
 
-.nav-links li{
+.nav-links li {
     padding: 0 2rem;
     font-size: 1.5rem;
     color: white;
@@ -41,24 +42,20 @@ nav {
     cursor: pointer;
 }
 
-.nav-links li:hover{
+.nav-links li:hover {
     color: rgb(6, 176, 233);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
     nav {
         text-align: center;
         justify-content: center;
         margin-bottom: 2rem;
     }
+
     .logo,
     .nav-links {
         padding: 0 3rem;
         margin: 2rem 0;
     }
-
-    .nav-links li{
-        padding: 0 2rem;
-    }
-
 }
